@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SHOPNO — Dark E-Commerce</title>
+  <meta name="description" content="A modern, responsive dark-themed e-commerce site with cart, categories, testimonials, newsletter, and about us." />
+<link rel="stylesheet" href="style.css"/>
+<script src="main.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">S</div>
+        <h1>SHOPNO</h1>
+      </div>
+      <nav>
+        <button class="btn" onclick="scrollToSection('hero')">Home</button>
+        <button class="btn" onclick="scrollToSection('categories')">Categories</button>
+        <button class="btn" onclick="scrollToSection('products')">Products</button>
+        <button class="btn" onclick="scrollToSection('testimonials')">Testimonials</button>
+        <button class="btn" onclick="scrollToSection('newsletter')">Newsletter</button>
+        <button class="btn" onclick="scrollToSection('about')">About</button>
+        <button class="btn primary" id="cartBtn">Cart (0)</button>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section id="hero" class="section">
+      <div class="card">
+        <h2>Fresh essentials delivered to your door</h2>
+        <p class="muted">Experience seamless shopping with our modern e-commerce platform.</p>
+        <button class="btn primary" onclick="scrollToSection('products')">Shop Now</button>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section id="categories" class="section">
+      <h3>Product Categories</h3>
+      <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr))">
+        <div class="card">Groceries</div>
+        <div class="card">Dairy</div>
+        <div class="card">Beverages</div>
+        <div class="card">Personal Care</div>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section id="products" class="section">
+      <h3>Featured Products</h3>
+      <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(250px,1fr))" id="productGrid"></div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section">
+      <h3>What Our Customers Say</h3>
+      <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
+        <div class="card">“Fast delivery and fresh products!” — Sarah</div>
+        <div class="card">“Great service and affordable prices.” — James</div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section id="newsletter" class="section">
+      <div class="card">
+        <h3>Subscribe to Our Newsletter</h3>
+        <p class="muted">Get updates on new products and exclusive deals.</p>
+        <input type="email" placeholder="Enter your email" style="padding:8px;border-radius:6px;border:0;width:70%">
+        <button class="btn primary">Subscribe</button>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="card">
+        <h3>About Us</h3>
+        <p class="muted">SHOPNO is a demo e-commerce platform created to showcase modern design and functionality. You can customize it to fit your business.</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 SHOPNO. Built with ❤️ as a demo project.</p>
+    </footer>
+  </div>
+
+  <!-- Cart -->
+  <div class="cart-panel" id="cartPanel">
+    <h3>Shopping Cart</h3>
+    <div id="cartItems"></div>
+    <div style="margin-top:12px;display:flex;justify-content:space-between">
+      <strong>Total:</strong>
+      <span id="cartTotal">$0.00</span>
+    </div>
+    <div style="margin-top:12px;display:flex;gap:8px">
+      <button class="btn" onclick="closeCart()">Close</button>
+      <button class="btn primary" onclick="checkout()">Checkout</button>
+    </div>
+  </div>
+
+
+</body>
+</html>
