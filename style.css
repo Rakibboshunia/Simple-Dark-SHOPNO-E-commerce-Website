@@ -1,3 +1,4 @@
+
 :root{
 --bg:#0f1720;
 --card:#111827;
@@ -8,6 +9,7 @@
 --shadow: 0 8px 30px rgba(2,6,23,0.6);
 color-scheme: dark;
 }
+
 *{box-sizing:border-box}
 body{
 margin:0;
@@ -16,6 +18,7 @@ background:linear-gradient(180deg,var(--bg), #07101a 120%);
 color:#e6eef6;
 padding:24px;
 }
+
 .container{max-width:1100px;margin:0 auto}
 header{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px}
 .brand{display:flex;align-items:center;gap:12px}
@@ -28,7 +31,9 @@ nav{display:flex;gap:10px}
 .grid{display:grid;gap:18px}
 .card{background:var(--card);padding:14px;border-radius:14px;border:1px solid rgba(255,255,255,0.03)}
 footer{text-align:center;color:var(--muted);margin-top:40px}
+
 /* cart */
 .cart-panel{position:fixed;right:20px;top:80px;width:320px;background:var(--card);padding:14px;border-radius:14px;border:1px solid rgba(255,255,255,0.06);box-shadow:var(--shadow);display:none}
 .cart-item{display:flex;justify-content:space-between;align-items:center;margin:6px 0;padding-bottom:6px;border-bottom:1px dashed rgba(255,255,255,0.05)}
 .cart-empty{text-align:center;color:var(--muted);padding:20px 0}
+
