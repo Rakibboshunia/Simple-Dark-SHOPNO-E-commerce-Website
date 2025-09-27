@@ -1,3 +1,4 @@
+
 const PRODUCTS = [
       {id:'p1',title:'Rice',price:24.99},
       {id:'p2',title:'Milk',price:1.99},
@@ -42,7 +43,8 @@ const PRODUCTS = [
 
     function scrollToSection(id){document.getElementById(id).scrollIntoView({behavior:'smooth'});} 
 
-    // Render products
+    
+// Render products
     const grid=document.getElementById('productGrid');
     PRODUCTS.forEach(p=>{
       const div=document.createElement('div');div.className='card';
@@ -51,3 +53,4 @@ const PRODUCTS = [
     });
 
     updateCartUI();
+
