@@ -1,4 +1,3 @@
-
 const PRODUCTS = [
       {id:'p1',title:'Rice',price:24.99},
       {id:'p2',title:'Milk',price:1.99},
@@ -51,6 +50,5 @@ const PRODUCTS = [
       div.innerHTML=`<h4>${p.title}</h4><p class='muted'>$${p.price.toFixed(2)}</p><button class='btn primary' onclick="addToCart('${p.id}')">Add to Cart</button>`;
       grid.appendChild(div);
     });
-
-    updateCartUI();
+updateCartUI();
 
