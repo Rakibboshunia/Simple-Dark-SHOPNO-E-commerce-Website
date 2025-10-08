@@ -1,5 +1,5 @@
-
-:root{
+:root
+{
 --bg:#0f1720;
 --card:#111827;
 --muted:#94a3b8;
@@ -36,4 +36,3 @@ footer{text-align:center;color:var(--muted);margin-top:40px}
 .cart-panel{position:fixed;right:20px;top:80px;width:320px;background:var(--card);padding:14px;border-radius:14px;border:1px solid rgba(255,255,255,0.06);box-shadow:var(--shadow);display:none}
 .cart-item{display:flex;justify-content:space-between;align-items:center;margin:6px 0;padding-bottom:6px;border-bottom:1px dashed rgba(255,255,255,0.05)}
 .cart-empty{text-align:center;color:var(--muted);padding:20px 0}
-
