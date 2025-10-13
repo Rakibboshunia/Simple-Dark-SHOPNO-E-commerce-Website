@@ -1,3 +1,4 @@
+
 :root
 {
 --bg:#0f1720;
@@ -10,6 +11,7 @@
 color-scheme: dark;
 }
 
+
 *{box-sizing:border-box}
 body{
 margin:0;
@@ -18,6 +20,7 @@ background:linear-gradient(180deg,var(--bg), #07101a 120%);
 color:#e6eef6;
 padding:24px;
 }
+
 
 .container{max-width:1100px;margin:0 auto}
 header{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px}
@@ -31,6 +34,7 @@ nav{display:flex;gap:10px}
 .grid{display:grid;gap:18px}
 .card{background:var(--card);padding:14px;border-radius:14px;border:1px solid rgba(255,255,255,0.03)}
 footer{text-align:center;color:var(--muted);margin-top:40px}
+
 
 /* cart */
 .cart-panel{position:fixed;right:20px;top:80px;width:320px;background:var(--card);padding:14px;border-radius:14px;border:1px solid rgba(255,255,255,0.06);box-shadow:var(--shadow);display:none}
